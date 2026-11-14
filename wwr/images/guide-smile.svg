@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 220" role="img" aria-labelledby="guideTitle guideDesc">
+  <title id="guideTitle">Happy river guide</title>
+  <desc id="guideDesc">An illustration of a happy guide smiling outdoors.</desc>
+  <defs>
+    <linearGradient id="shirt" x1="0" x2="1">
+      <stop offset="0%" stop-color="#d9a86c"/>
+      <stop offset="100%" stop-color="#b9763c"/>
+    </linearGradient>
+  </defs>
+  <circle cx="110" cy="95" r="58" fill="#f2c49b"/>
+  <path d="M50 200 Q110 120 170 200 L170 220 L50 220 Z" fill="url(#shirt)"/>
+  <path d="M62 50 Q110 14 158 55" fill="none" stroke="#2d3a3e" stroke-width="12" stroke-linecap="round"/>
+  <circle cx="90" cy="92" r="6" fill="#1d2d33"/>
+  <circle cx="130" cy="92" r="6" fill="#1d2d33"/>
+  <path d="M92 112 Q110 128 128 112" fill="none" stroke="#1d2d33" stroke-width="7" stroke-linecap="round"/>
+  <path d="M58 90 L28 60" stroke="#2d3a3e" stroke-width="12" stroke-linecap="round"/>
+  <path d="M162 90 L192 60" stroke="#2d3a3e" stroke-width="12" stroke-linecap="round"/>
+  <path d="M74 176 L50 214" stroke="#2d3a3e" stroke-width="12" stroke-linecap="round"/>
+  <path d="M146 176 L170 214" stroke="#2d3a3e" stroke-width="12" stroke-linecap="round"/>
+</svg>

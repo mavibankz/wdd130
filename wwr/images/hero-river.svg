@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" role="img" aria-labelledby="heroTitle heroDesc">
+  <title id="heroTitle">Whitewater river</title>
+  <desc id="heroDesc">A scenic river winding through cliffs with a rafting boat.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#dfeff5"/>
+      <stop offset="100%" stop-color="#adc8d8"/>
+    </linearGradient>
+    <linearGradient id="water" x1="0" x2="1">
+      <stop offset="0%" stop-color="#49b4d7"/>
+      <stop offset="100%" stop-color="#1a5470"/>
+    </linearGradient>
+    <linearGradient id="mountain" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#6d7d74"/>
+      <stop offset="100%" stop-color="#44514e"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="600" fill="url(#sky)"/>
+  <path d="M0 260 L220 180 L355 260 L520 160 L670 240 L820 150 L980 260 L1200 200 L1200 600 L0 600 Z" fill="url(#mountain)"/>
+  <path d="M0 350 C180 270, 260 290, 420 330 S760 400, 1200 310 L1200 600 L0 600 Z" fill="url(#water)"/>
+  <path d="M0 425 C150 390, 280 405, 430 430 S760 470, 1200 420" fill="none" stroke="#7ad9ff" stroke-width="18" stroke-linecap="round"/>
+  <path d="M0 455 C150 420, 290 440, 430 470 S760 505, 1200 450" fill="none" stroke="#c3efff" stroke-width="12" stroke-linecap="round" opacity="0.8"/>
+  <g transform="translate(640 320)">
+    <ellipse cx="0" cy="22" rx="120" ry="23" fill="#d9a86c" opacity="0.9"/>
+    <path d="M-120 22 L-60 8 L70 8 L120 22 L70 36 L-60 36 Z" fill="#d4a66a"/>
+    <path d="M-30 7 L-8 -20 L20 -30 L28 7 Z" fill="#efefef"/>
+    <path d="M-28 -24 L-10 -54 L18 -54 L34 -24 Z" fill="#d8dfe5"/>
+    <path d="M0 -56 L16 -92 L28 -90 L14 -56 Z" fill="#e3f5ff"/>
+    <path d="M-76 18 Q0 -4 76 18" fill="none" stroke="#f4efe8" stroke-width="6" stroke-linecap="round"/>
+    <path d="M-20 36 L-26 55" stroke="#2d5161" stroke-width="6" stroke-linecap="round"/>
+    <path d="M20 36 L26 55" stroke="#2d5161" stroke-width="6" stroke-linecap="round"/>
+  </g>
+</svg>
