@@ -3,55 +3,125 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact Us | Rapids Edge</title>
-    <meta name="description" content="Contact Rapids Edge to plan your next whitewater rafting trip." />
+    <title>Contact Rapids Edge | Rafting Questions &amp; Reservations</title>
+    <meta
+      name="description"
+      content="Contact Rapids Edge in Boise, Idaho, with rafting questions, reservation requests, or website suggestions. Find our address, phone, email, and contact form."
+    />
     <meta name="author" content="Marvellous Aribibia" />
     <link rel="stylesheet" href="styles/rafting.css" />
   </head>
   <body>
     <header>
       <img src="images/logo.svg" alt="Rapids Edge logo" />
-      <nav>
+      <nav aria-label="Main navigation">
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About Us</a></li>
           <li><a href="trips.html">Trips</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="contact.html" aria-current="page">Contact Us</a></li>
         </ul>
       </nav>
     </header>
+
     <main>
-      <div class="hero">
-        <img src="images/hero-river.svg" alt="River contact page banner" />
-        <h1>Contact Us</h1>
-        <article>
-          <img src="images/guide-smile.svg" alt="Guide ready to help" />
-          <p>Tell us about your group, preferred dates, and adventure style, and we’ll help craft the perfect trip.</p>
-        </article>
+      <h1 class="contact-title">Contact Us</h1>
+      <div class="contact-layout">
+        <section class="company-info" aria-labelledby="company-info-title">
+          <h2 id="company-info-title">Rapids Edge</h2>
+          <address>
+            214 Riverbend Road<br />
+            Boise, ID
+          </address>
+          <p>
+            <strong>Phone:</strong>
+            <a href="tel:+15551237238">(555) 123-RAFT</a><br />
+            <strong>Email:</strong>
+            <a href="mailto:hello@rapidsedge.com">hello@rapidsedge.com</a>
+          </p>
+          <iframe
+            class="contact-map"
+            title="Map showing Rapids Edge at 214 Riverbend Road, Boise, Idaho"
+            src="https://maps.google.com/maps?q=214%20Riverbend%20Road%2C%20Boise%2C%20ID&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </section>
+
+        <section class="contact-form-section" aria-labelledby="contact-form-title">
+          <h2 id="contact-form-title">Send Us a Message</h2>
+          <form>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" autocomplete="name" required />
+
+            <label for="email">Email address</label>
+            <input type="email" id="email" name="email" autocomplete="email" required />
+
+            <fieldset>
+              <legend>What is your message about?</legend>
+              <label class="choice-label" for="general-inquiry">
+                <input type="radio" id="general-inquiry" name="purpose" value="general-inquiry" required />
+                General Inquiry
+              </label>
+              <label class="choice-label" for="reservation-question">
+                <input type="radio" id="reservation-question" name="purpose" value="reservation-question" />
+                Reservation Question
+              </label>
+              <label class="choice-label" for="website-suggestion">
+                <input type="radio" id="website-suggestion" name="purpose" value="website-suggestion" />
+                Website Suggestion
+              </label>
+            </fieldset>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+
+            <label class="choice-label newsletter-label" for="newsletter">
+              <input type="checkbox" id="newsletter" name="newsletter" />
+              Please subscribe me to the monthly newsletter
+            </label>
+
+            <button type="submit">Send Message</button>
+          </form>
+        </section>
       </div>
-      <section>
-        <h2>Get in Touch</h2>
-        <p>
-          Email: <a href="mailto:hello@rapidsedge.com">hello@rapidsedge.com</a><br />
-          Phone: <a href="tel:+15551237238">(555) 123-RAFT</a><br />
-          Location: 214 Riverbend Road, Boise, ID
-        </p>
+
+      <section class="employee-section" aria-labelledby="employee-title">
+        <h2 id="employee-title">Meet Our River Team</h2>
+        <div class="employee-profiles">
+          <figure>
+            <img src="images/rafting53_600.jpg" alt="River guide team navigating whitewater" />
+            <figcaption>Lead River Guide</figcaption>
+          </figure>
+          <figure>
+            <img src="images/rafting56_600.jpg" alt="Rafting crew working together on a rapid" />
+            <figcaption>River Safety Director</figcaption>
+          </figure>
+          <figure>
+            <img src="images/rafting59_600.jpg" alt="Rafting team celebrating beside their raft" />
+            <figcaption>Guest Services Manager</figcaption>
+          </figure>
+        </div>
       </section>
     </main>
+
     <footer>
       <p>© <span id="year"></span> Rapids Edge | Marvellous Aribibia</p>
       <nav class="socialmedia" aria-label="Social media links">
         <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-          <img src="images/facebook.svg" alt="Facebook" />
+          <img src="images/facebook.svg" alt="Facebook icon" />
         </a>
         <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-          <img src="images/linkedin.svg" alt="LinkedIn" />
+          <img src="images/linkedin.svg" alt="LinkedIn icon" />
         </a>
         <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-          <img src="images/instagram.svg" alt="Instagram" />
+          <img src="images/instagram.svg" alt="Instagram icon" />
         </a>
       </nav>
     </footer>
-    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
   </body>
 </html>
